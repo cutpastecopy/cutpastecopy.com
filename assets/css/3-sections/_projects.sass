@@ -1,0 +1,131 @@
+$mobile: 145px
+$tablet: 200px
+$desktop: 400px
+$black: #444444
+$gray: #777777
+
+.projects-section
+	width: 100%
+	margin: 10px auto
+	text-align: center
+
+	@media (max-width: 1024px)
+		margin-top: 60px
+		margin-left: 20px
+		margin-right: 20px
+
+	@media(max-width: 640px)
+		margin-top: 60px
+		margin-left: 20px
+		margin-right: 20px
+
+	.jumbo-image-container
+
+		img
+			text-align: center
+
+	.project-item-wrap
+		position: relative
+		display: inline-block
+
+		+size($desktop)
+		background: $white
+		border-radius: 2px
+		margin: 5px
+		box-shadow: 0 1px 2px rgba(0,0,0,0.07)
+
+		&.is-emph
+			animation-name: tada
+			animation-duration: 1s
+			animation-fill-mode: both
+
+		@media (max-width: 1024px)
+			+size($tablet)
+
+		@media (max-width: 640px)
+			+size($mobile)
+			margin: 10px
+
+		.image-container
+			position: relative
+
+			+size($desktop)
+			background:
+				position: center
+				repeat: no-repeat
+				size: cover
+			text-align: center
+
+			@media (max-width: 1024px)
+				+size($tablet)
+
+			@media (max-width: 640px)
+				+size($mobile)
+
+		.image-overlay
+			opacity: 0
+
+			+size($desktop)
+			position: absolute
+			top: 0
+			left: 0
+			+transition(all 0.2s ease-in-out)
+
+			&:hover
+				opacity: 1
+				background: rgba($white, 0.9)
+
+			@media (max-width: 1024px)
+				+size($tablet)
+
+			@media (max-width: 640px)
+				+size($mobile)
+
+			.meta
+				text-align: left
+				margin-top: 5px
+				margin-left: 10px
+				margin-right: 10px
+
+			.name
+				color: $black
+				line-height: 1.2
+				font:
+					size: 14px
+					weight: 700
+				margin: 0 0 4px 0
+
+				@media (max-width: 640px)
+					font-size: 12px
+
+			.description
+				color: darken($gray, 50%)
+				font:
+					size: 12px
+					weight: 300
+
+				@media (max-width: 640px)
+					font-size: 10px
+
+			.instructions
+				color: darken($gray, 50%)
+				font:
+					size: 12px
+					weight: 300
+
+				@media (max-width: 640px)
+					font-size: 10px
+
+			.itemDate
+				position: absolute
+				left: 10px
+				bottom: 5px
+
+				font:
+					size: 12px
+					weight: 300
+
+				color: darken($gray, 50%)
+
+				@media (max-width: 640px)
+					font-size: 10px

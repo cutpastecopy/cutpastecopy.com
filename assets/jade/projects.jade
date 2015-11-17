@@ -1,0 +1,55 @@
+doctype html
+html 
+	head 
+		title Cut Paste Copy
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width")
+		link(rel="stylesheet" href="/assets/css/index.css")
+		link(rel="shortcut icon" href="favicon.ico")
+			
+		body.content
+			a(href="#").toggle.animated.slideInLeft
+				i.fa.fa-bars#toggle
+				
+			.nav-container
+				h1.cpc-logo cut paste copy
+
+				nav
+					a(href="/")
+						i.fa.fa-home
+						|   Home
+					a(href="contact.html") 
+						i.fa.fa-paper-plane-o
+						|  Contact Us
+					a(href="projects.html")
+						i.fa.fa-wrench
+						|  Projects
+
+				a(href="mailto:nmhscutpastecopy@gmail.com").email-link +Email Us
+			section.projects-section
+				- var assetsLocation = "assets/images/"
+				mixin project-item(itemImage, itemName, itemDescription, itemDate, itemSize)
+					a(href="#{assetsLocation}#{itemImage}" target="_blank")
+						.project-item-wrap.animated.slideInRight
+							.image-container(style="background-image: url(#{assetsLocation}#{itemImage});")
+							.image-overlay
+								.meta
+									.name #{itemName}
+									.description #{itemDescription}.
+									.instructions 
+										strong *Hint*:
+										|  Click to Enlarge Image.
+									.itemDate #{itemDate}
+						
+				+project-item("cpc-logo.png", "CPC Logo", "The Cut Paste Copy Logo", "November 5th, 2015")
+				+project-item("namesposter.png", "Names Poster", "The Names Poster for Names Day", "October 20th, 2015")
+				+project-item("tommywarhol.png", "Tommy Warhol Effect", "An attempt at the Tommy Warhol Effect", "October 11th, 2015")
+				+project-item("cpcbusinesscard.png", "CPC Offical Business Card", "Our custom made business card", "October 3th, 2015")
+				+project-item("vangogh.png", "Vangogh Effect", "An attempt at an Vangogh-like-effect with an image of a cat", "October 22th, 2015")
+				+project-item("improvapaloozaticket.jpg", "Improvapalooza Ticket Design", "A ticket design for the Improvapalooza drama show at New Milford High School", "November 11th, 2015")
+				+project-item("cpctshirtdesign.png", "CPC Offical T-Shirt Design", "Our custom made t-shirt design", "November 10th, 2015")
+				+project-item("wtzflyer.png", "Wild Times Zoo Flyer Design", "An attempt at a custom made flyer for a zoo", "October 1st, 2015")
+				+project-item("comicportrait.png", "A Comic Portrait Effect", "An attempt at a comic style portrait", "September 24th, 2015")
+				
+			script(src="/assets/js/0-tools/min/jquery-2.1.4-min.js")
+			script(src="/assets/js/functions.js")

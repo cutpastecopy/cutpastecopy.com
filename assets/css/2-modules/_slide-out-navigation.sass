@@ -1,0 +1,77 @@
+$white:  #fff
+$black:  #111
+
+.content
+	position: relative
+	z-index: 9999
+	overflow-x: hidden
+	left: -20px
+	padding-left: 20px
+	padding-right: 20px
+
+.nav-open
+	left: 130px
+	+transition(left 0.3s ease-in-out)
+
+	@media (max-width: 768px)
+		left: 0px
+
+	@media (max-width: 640px)
+		left: 0px
+
+.nav-open .nav-container
+	left: 0
+
+.nav-open .toggle
+	left: 155px
+	+transition(left 0.3s ease-in-out)
+
+.toggle
+	color: $black !important
+	text-decoration: none
+	font-size: 32px
+	position: fixed
+	top: 10px
+	left: 20px
+	z-index: 1
+
+.nav-container
+	background: $white
+	position: fixed
+	top: 0
+	left: -175px
+	height: 100%
+	width: 130px
+	text-align: left
+	z-index: 1
+	+transition(left 0.3s ease-in-out)
+
+	a
+		text-decoration: none
+		color: rgba($black, 0.2)
+		display: block
+		padding-top: 20px
+		padding-left: 20px
+
+		&:hover
+			color: $black
+
+.cpc-logo
+	text-align: center
+	+hide-text
+	background:
+		image: url(../../assets/images/header.png)
+		repeat: no-repeat
+		position: center
+		size: contain
+	height: 100px
+	margin-top: 30px
+
+nav
+	position: absolute
+	top: calc(55% - 84px)
+
+.email-link
+	position: absolute
+	top: calc(95% - 22px)
+	left: 5%
