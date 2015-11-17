@@ -1750,17 +1750,6 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 1
 		},
-	"\/assets\/jade\/posts\/1.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/jade\/posts\/1.jade",
-		"outputAbbreviatedPath": "\/posts\/1.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
-		"outputStyle": 0
-		},
 	"\/assets\/jade\/projects.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -1823,14 +1812,26 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/projects.html": {
-		"fileType": 8192,
-		"ignore": 1,
+	"\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/projects.html",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/README.html",
+		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		}
 	},
 "hooks": [
@@ -1840,7 +1841,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Cut Paste Copy [Standard]",
+	"displayValue": "cutpastecopy.github.io",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_brown"
 	},
