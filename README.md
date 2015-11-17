@@ -1,4 +1,4 @@
-# Cut Paste Copy Website [Standard]
+# Cut Paste Copy Website
 ![Project Preview](assets/images/thumbnail.png)
 Made By: [Nick Adamou](http://nicholasadamou.me/)
 
