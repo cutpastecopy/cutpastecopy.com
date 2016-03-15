@@ -1,0 +1,1 @@
+!function($){"use strict";function e(){var e=Math.floor(Math.random()*$(".project-item-wrap").length)+1;$(".project-item-wrap").eq(e).addClass("is-emph").siblings().removeClass("is-emph")}$(document).ready(function(){setInterval(function(){e()},4e3),$(".toggle").bind("click",function(){return $("body").toggleClass("nav-open"),!1})})}(jQuery);

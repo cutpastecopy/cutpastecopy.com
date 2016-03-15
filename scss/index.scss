@@ -1,0 +1,36 @@
+/* Cut, Paste & Copy V1.0.0
+ * Copyright 2016, Nicholas Adamou
+ *  http://cutpastecopy.github.io/
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+//- Settings.scss
+//- Contains various variables, mixins, and other things to make the life of a front-end developer easier.
+@import "../settings/settings.scss";
+
+//- Bower Components/Partials
+//- Contains useful code developed by third-parties to be used in this project.
+@import "bourbon"; //- When using "CodeKit", "Bourbon" will automatically install.
+@import "partials/btns.scss";
+@import "partials/colors.sass";
+@import url($normalize_css);
+@import url($animate_css);
+@import url($font_awesome);
+
+//- Base
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700");
+@import "base/variables.sass";
+@import "base/base.sass";
+
+//- Sections
+@import 'sections/information.sass';
+@import 'sections/contact.sass';
+@import 'sections/projects.sass';
+
+//- Modules
+@import 'modules/slide-out-navigation.sass';
+@import 'modules/social-navigation.sass';
+@import 'modules/img-container.sass';
+@import 'modules/twitter-btn.sass';

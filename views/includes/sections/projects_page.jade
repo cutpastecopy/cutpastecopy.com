@@ -1,0 +1,28 @@
+section.projects-section
+	- var assetsLocation = "assets/images/projects/"
+	mixin project-item(itemImage, itemName, itemDescription, itemDate, itemSize)
+		a(href="#{assetsLocation}#{itemImage}" target="_blank").link
+			.project-item-wrap.animated.slideInRight
+				.image-container(style="background-image: url(#{assetsLocation}#{itemImage});")
+				.image-overlay
+					.meta
+						.name #{itemName}
+						.description #{itemDescription}.
+						.instructions 
+							strong *Hint*:
+							|  Click to Enlarge Image.
+			
+	+project-item("cpc-logo.png", "CPC Logo", "The Cut Paste Copy Logo")
+	+project-item("namesposter.png", "Names Poster", "The Names Poster for Names Day")
+	+project-item("tommywarhol.png", "Tommy Warhol Effect", "An attempt at the Tommy Warhol Effect")
+	+project-item("cpcbusinesscard.png", "CPC Offical Business Card", "Our custom made business card")
+	+project-item("vangogh.png", "Vangogh Effect", "An attempt at an Vangogh-like-effect with an image of a cat")
+	+project-item("comicportrait.png", "A Comic Portrait Effect", "An attempt at a comic style portrait")
+	+project-item("Animal-Welfare-Society-Poster.jpg", "Animal Welfare Society Poster", "Animal Welfare Adoption Poster")
+	+project-item("Cookbook-Design.jpg", "Cut, Paste, and Copy's Cookbook Design", "Our design for our annual cookbook party booklet")
+	+project-item("front_color_2.png", "Christmas Carol Booklet Cover", "New Milford Commission on the Arts Annual Carol Sings booklet cover")
+	+project-item("back_color.png", "Christmas Carol Booklet Back", "New Milford Commission on the Arts Annual Carol Sings booklet back")
+	+project-item("Good_Life_OneRepublic_front.png", "Good Life by OneRepublic Album Cover Art", "A album artwork design")
+	+project-item("Good_Life_OneRepublic_back.png", "Good Life by OneRepublic Album Back Art", "A album artwork design")
+	+project-item("croc-frog-hybrid.png", "Crocirog 1", "Version 1 of a frog and a crocadile hybrid")
+	+project-item("croc-frog-hybrid_2.png", "Crocirog 2", "Version 2 of a frog and a crocadile hybrid")
