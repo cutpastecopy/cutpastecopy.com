@@ -39,6 +39,7 @@ The project has a very simple and flexible structure.
 │   ├───index.scss -> Un-Compiled SCSS file
 ├───views/ -> Un-Compiled Jade directory
 │   ├───includes/ -> Un-Compiled Jade files to be included inside the `index.jade` file
+│   │   └───partials/ -> Contains the main `head.jade` and `scripts.jade` file(s)
 ├───settings/ -> Starter Kit Settings
 │   ├───index.jade -> Un-Compiled Jade file
 ├───index.html -> Main Compiled Jade file
