@@ -5,7 +5,7 @@
 ![license](https://img.shields.io/apm/l/vim-mode.svg)
 
 ## About Cut, Paste & Copy
-Cut, Paste & Copy is a student run graphic design business. We use several of the Adobe Creative Suite programs, such as, Photoshop, Illustrator, and inDesign. To practice our graphic design skills, we reach out to the community for real world experience. For our past community projects we have created business cards, t- shirt designs, posters, booklets, and more.
+Cut, Paste & Copy is a student run graphic design business. We use several of the Adobe Creative Suite programs, such as, Photoshop, Illustrator, and inDesign. We practice our graphic design skills both in the classroom and the real world by reaching out to the community for projects. We have designed business cards, t- shirt designs, posters, booklets, and more.
 
 # About the Project
 CodeKit Starter Kit is a simple, responsive boilerplate to kickstart any responsive project.
